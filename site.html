@@ -1,0 +1,240 @@
+<!doctype html>
+<!--Bryan Mayson 29259436-->
+<html lang = "en">
+    <!--Web Template based on https://www.w3schools.com/w3css/tryw3css_templates_architect.htm-->
+    <head>
+        <meta charset="UTF-8" />
+        <title>iDream: Travel to Animated Worlds</title>
+        <link href="layout.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </head>
+    
+    <body>
+        <!-- Flat Menu Navigation-->
+        <div class="navigation">
+            <p class="logo"><img src="logo.png" alt="Company Logo"/></p>
+            <a href="#enquire" title="Enquire" class="links">Enquire</a>
+            <a href="#about" title="About" class="links">About</a>
+            <a href="#destination" title="Destinations" class="links">Destinations</a>
+            <a href="#home" title="Home" class="links">Home</a>
+        </div>
+        
+        <!--Home Section of the Site-->
+        <!--Tutorial Used: https://www.w3schools.com/howto/howto_css_image_text.asp-->
+        <section id="home">
+        <div class="section1">
+
+            <!-- Tutorial Used: https://www.taniarascia.com/crossfade-between-two-images-with-css-animations/-->
+
+            <!--Image obtained from-->
+            <!--https://pxhere.com/en/photo/1606043-->
+            <img src="background.jpg" class="bottom" alt="background_image1"/>
+
+            <!--Image obtained from-->
+            <!--https://pxhere.com/en/photo/1606042-->
+            <img src="background2.jpg" class="top" alt="background_image2"/>
+
+            <div class="section1_text">
+               <img src="logo2.png" alt="center_logo"/>
+               <h1>Take part in an Adventure of a lifetime</h1>
+               <p>Have you ever desired to take a jounery into the land of the unknown? Do you want to experience more than you currently have?
+                  Choose an animated movie of your choice and live out their lives and experience their life experiences!
+               </p>
+               <p><button title="Book Now"><span>Book Now</span></button></p>
+            </div>
+        </div>
+        </section>
+        
+        <!--Destinations Available by the service-->
+        <section id="destination">
+        <div class="section2">
+
+            <!-- Desintations-->
+            <div class="headers">
+                <h1>Destinations</h1>
+            </div>
+
+            <!-- Filtering Menu-->
+            <!-- JS Function Calling based from https://www.w3schools.com/jsref/event_onclick.asp-->
+            <div class="filter_options">
+                <button onclick="filterall()">All</button>
+                <button onclick="filter1()">Ghibli Studio</button>
+                <button onclick="filter2()">CoMix Wave Films</button>
+            </div>
+
+            <!-- Items containing available destinations -->
+            <div class="options">
+                <div class="poster2">
+                    <!--Image obtained from-->
+                    <!--https://en.wikipedia.org/wiki/Flavors_of_Youth#/media/File:Flavors_of_Youth_poster.jpeg-->
+                    <p>Flavors of Youth</p>
+                    <img src="poster8.jpeg" alt="Flavors of Youth"  class="poster_img"/>
+                </div>
+                <div class="poster1">
+                    <!--Image obtained from-->
+                    <!--https://en.wikipedia.org/wiki/My_Neighbor_Totoro#/media/File:My_Neighbor_Totoro_-_Tonari_no_Totoro_(Movie_Poster).jpg-->
+                    <p>My Neighbour Totoro</p>
+                    <img src="poster1.jpg" alt="My Neighbour Totoro"  class="poster_img"/>
+                </div>
+                <div class="poster1">
+                    <!--Image obtained from-->
+                    <!--https://en.wikipedia.org/wiki/Princess_Mononoke#/media/File:Princess_Mononoke_Japanese_poster.png-->
+                    <p>Princess Mononoke</p>
+                    <img src="poster3.png" alt="Princess Mononoke"  class="poster_img"/>
+                </div>
+                <div class="poster2">
+                    <!--Image obtained from-->
+                    <!--https://en.wikipedia.org/wiki/5_Centimeters_per_Second#/media/File:5_Centimeters_Per_Second_poster.jpg-->
+                    <p>5 Centimeters Per Second</p>
+                    <img src="poster11.jpg" alt="5 Centimeters Per Second"  class="poster_img"/>
+                </div>
+                <div class="poster1">
+                    <!--Image obtained from-->
+                    <!--https://en.wikipedia.org/wiki/The_Wind_Rises#/media/File:Kaze_Tachinu_poster.jpg-->
+                    <p>The Wind Rises</p>
+                    <img src="poster6.jpg" alt="The Wind Rises"  class="poster_img"/>  
+                </div>
+                <div class="poster2">
+                    <!--Image obtained from-->
+                    <!--https://en.wikipedia.org/wiki/Weathering_with_You#/media/File:Weathering_with_You_Poster.jpg-->
+                    <p>Weathering With You</p>
+                    <img src="poster7.jpg" alt="Weathering With You"  class="poster_img"/>
+                </div>
+                <div class="poster1">
+                    <!--Image obtained from-->
+                    <!--https://en.wikipedia.org/wiki/Spirited_Away#/media/File:Spirited_Away_Japanese_poster.png-->
+                    <p>Spirited Away</p>
+                    <img src="poster4.png" alt="Spirited Away"  class="poster_img"/>
+                </div>
+                <div class="poster1">
+                    <!--Image obtained from-->
+                    <!--https://en.wikipedia.org/wiki/Porco_Rosso#/media/File:Porco_Rosso_(Movie_Poster).jpg-->
+                    <p>Porco Rosso</p>
+                    <img src="poster2.jpg" alt="Porco Rosso"  class="poster_img"/>
+                </div>
+                <div class="poster2">
+                    <!--Image obtained from-->
+                    <!--https://en.wikipedia.org/wiki/Your_Name#/media/File:Your_Name_poster.png-->
+                    <p>Your Name</p>
+                    <img src="poster9.png" alt="Your Name"  class="poster_img"/>
+                </div>
+                <div class="poster1">
+                    <!--Image obtained from-->
+                    <!--https://en.wikipedia.org/wiki/Ponyo#/media/File:Ponyo_(2008).png-->
+                    <p>Ponyo</p>
+                    <img src="poster5.png" alt="Ponyo"  class="poster_img"/>
+                </div>
+                <div class="poster1">
+                    <!--Image obtained from-->
+                    <!--https://en.wikipedia.org/wiki/Castle_in_the_Sky#/media/File:Castle_in_the_Sky_(1986).png-->
+                    <p>Castle in the Sky</p>
+                    <img src="poster12.png" alt="Castle in the Sky"  class="poster_img"/>
+                </div>
+                <div class="poster2">
+                    <!--https://en.wikipedia.org/wiki/The_Garden_of_Words#/media/File:Garden_of_Words_poster.png-->
+                    <p>The Garden of Words</p>
+                    <img src="poster10.png" alt=">The Garden of Words"  class="poster_img"/>
+                </div>
+            </div>
+
+        </div>
+        </section>
+
+        <!--About us Section-->
+        <section id="about">
+        <div class="section3">
+            <h1>About Us</h1>
+            <p>
+                iDream was establish in the year 2020, by John Doe and is virtual travel destination service which allows its users live the life of an animated movie.
+                We aim to provide users with the best form learning experiences and adventure possible through the use of our advance pill technology which allows the user to temporarily be part of their world.
+                Currently, iDream has two main collaberators, Studio Ghibli and CoMix Wave Films. However, we hope that in the near future we would further be able to expand the usage of the pill technology as
+                as provide the users with more virtual destinations to come. Read more to find out about our pill technology and our history.
+            </p>
+            
+            <!--Employee Profiles-->
+            <div class="row_profile">
+                <div class="profile">
+                    <!--Image obtained from-->
+                    <!--https://www.pexels.com/photo/man-young-happy-smiling-91227/-->
+                    <img src="profile1.jpg" alt="John"/>
+                    <h3>John Doe</h3>
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="profile">
+                    <!--Image obtained from-->
+                    <!--https://www.pexels.com/photo/woman-wearing-black-eyeglasses-1239291/-->
+                    <img src="profile2.jpeg" alt="Jane"/>
+                    <h3>Jane Doe</h3>
+                    <p>Head of Research</p>
+                </div>
+                <div class="profile">
+                    <!--Image Obtained from-->
+                    <!--https://www.pexels.com/photo/man-wearing-black-zip-up-jacket-near-beach-smiling-at-the-photo-736716/-->
+                    <img src="profile3.jpg" alt="Mike"/>
+                    <h3>Micheal Ross</h3>
+                    <p>Head of Marketing</p>
+                </div>
+                <div class="profile">
+                    <!--Image obtained from-->
+                    <!--https://www.pexels.com/photo/portrait-photo-of-man-in-white-crew-neck-t-shirt-with-assorted-hand-tools-in-background-1139743/-->
+                    <img src="profile4.jpeg" alt="Dan"/>
+                    <h3>Dan Star</h3>
+                    <p>Customer Relations</p>
+                </div>
+            </div>
+            <div class="readmore">
+                <a href="" title="Read More">Read More</a>
+            </div>
+        </div>
+        </section> 
+
+        <!--Enquiry Section-->
+        <section id="enquire">
+        <div class="section4">
+            
+            <div class="headers">
+                <h1>Contact Us</h1>
+            </div>
+
+            <p>Do your require any assitance? Feel free to drop an enquiry with the form the below and our team will respond as soon as we can.</p>
+            <form action="/action_page.php" target="_blank">
+            <input class="input_bar" type="text" placeholder="Name" required name="Name">
+            <input class="input_bar" type="text" placeholder="Email" required name="Email">
+            <input class="input_bar" type="text" placeholder="Subject" required name="Subject">
+            <input class="input_bar" type="text" placeholder="Comment" required name="Comment">
+            <button class="submit_button" type="submit">
+                 SEND MESSAGE
+            </button>
+            </form>
+        </div>
+
+        <!--Footer: Collaberations and Partners-->
+        <div class="section5">
+            <p>In Collaboration With</p>
+            <p>
+                <!--Image obtained from-->
+                <!--https://en.wikipedia.org/wiki/Studio_Ghibli#/media/File:Studio_Ghibli_logo.svg-->
+                <a href="http://www.ghibli.jp/" title="Studio Ghilbi"><img class="ghibli" src="ghibli.png" alt="Studio Ghibli Logo"/></a>
+
+                <!--Image obtained from-->
+                <!--https://en.wikipedia.org/wiki/CoMix_Wave_Films#/media/File:CoMix_Wave_Films_logo.svg-->
+                <a href="https://www.cwfilms.jp/en/" title="CoMix Wave Films"><img class="comix" src="comix.png" alt="CoMix Films Logo"/></a>
+            </p>
+            <!--Bottom Navigation Menu-->
+            <div class="bottomnav">
+                <a href="#book" title="Book Now">Book Now</a>
+                <a href="#home" title="Home">Home</a>
+                <a href="#destinations" title="Destinations">Destinations</a>
+                <a href="#about" title="About">About</a>
+                <a href="#enquire" title="Enquire">Enquire</a>
+            </div>
+        </div>
+        </section>
+
+        <script src="script.js"></script>
+
+
+        
+    </body>
+
+</html>
